@@ -1,9 +1,10 @@
+const { authMiddleware } = require("../util");
 const produtos = require("../controllers/produtos");
 
 module.exports = function (app) {
-  app.get("/produtos", produtos.listAll);
-  app.get("/produtos/:id", produtos.findOne);
-  app.post("/produtos", produtos.create);
-  app.put("/produtos/:id", produtos.update);
-  app.delete("/produtos/:id", produtos.destroy);
+  app.get("/produtos", authMiddleware, produtos.listAll);
+  app.get("/produtos/:id", authMiddleware, produtos.findOne);
+  app.post("/produtos", authMiddleware, produtos.create);
+  app.put("/produtos/:id", authMiddleware, produtos.update);
+  app.delete("/produtos/:id", authMiddleware, produtos.destroy);
 };

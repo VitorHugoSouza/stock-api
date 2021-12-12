@@ -1,10 +1,11 @@
 {
   "development": {
-    "username": "root",
-    "password": "",
+    "username": "admin",
+    "password": "wjHo9yFNkFSpGdWQn3VG",
     "database": "stock",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "host": "estoque.cdtv6v1htvrb.sa-east-1.rds.amazonaws.com",
+    "dialect": "mysql",
+    "port": "3306"
   },
   "test": {
     "username": "root",

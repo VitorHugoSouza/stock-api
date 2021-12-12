@@ -10,7 +10,11 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"cors": "^2.8.5",
+		"crypto": "^1.0.1",
 		"express": "^4.17.1",
+		"express-jwt": "^6.1.0",
+		"jsonwebtoken": "^8.5.1",
 		"mysql2": "^2.3.3",
 		"sequelize": "^6.11.0"
 	},
